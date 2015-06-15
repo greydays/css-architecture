@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="186px" height="113px" viewBox="0 0 186 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup">
+            <ellipse id="Oval-1" fill="#FCEFE4" sketch:type="MSShapeGroup" cx="93" cy="56.5" rx="93" ry="56.5"></ellipse>
+            <text id="Awe" sketch:type="MSTextLayer" font-family="Helvetica" font-size="48" font-weight="bold" fill="#D0011B">
+                <tspan x="20" y="56">Awe</tspan>
+            </text>
+            <text id="site" sketch:type="MSTextLayer" font-family="Helvetica" font-size="48" font-weight="normal" fill="#D0011B">
+                <tspan x="62" y="98">site</tspan>
+            </text>
+            <text id="some" sketch:type="MSTextLayer" font-family="Helvetica" font-size="48" font-weight="normal" fill="#000000">
+                <tspan x="56" y="74">some</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
