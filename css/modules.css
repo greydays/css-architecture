@@ -1,0 +1,65 @@
+
+/*header*/
+header {
+  min-height: 5em;
+  background-color: #979EAA;
+  margin-bottom: 1em;
+}
+
+/*body*/
+section:nth-child(even) {
+  background-color: #979EAA;
+}
+/*order form*/
+.subscribe_form {
+  width: 300px;
+  border-radius: 8px;
+  padding: 2%;
+}
+legend {
+  font-size: 1.25em;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+fieldset {
+  border-radius: 8px;
+  padding: 6px;
+  background-color: #dddddd;
+}
+label, input, button {
+  cursor: pointer;
+}
+input, button {
+  height: 2em;
+  width: 99%;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 2px;
+  padding-left: 4px;
+}
+label {
+  margin-left: 5px;
+  font-size: .6em;
+  text-transform: uppercase;
+}
+.subscribe_button {
+  margin-top: 5px;
+  text-align: center;
+}
+/*footer*/
+footer{
+  height: 5em;
+  margin-top: 2em;
+  background-color: #D0021B;
+  text-align: center;
+  clear: both;
+}
+/*utilities*/
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
