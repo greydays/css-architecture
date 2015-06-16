@@ -3,29 +3,50 @@
 header {
   min-height: 5em;
   background-color: #979EAA;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
-.logo, .top_nav {
-  position: relative;
-  display: inline-block;
-  font-size: 1.5em;
-  top: 1.5em;
+
+/*body*/
+section:nth-child(even) {
+  background-color: #979EAA;
 }
-.top_nav {
-  display: inline;
-}
-.logo, .nav_link {
-  margin-right: 4%;
-  margin-left: 4%;
-}
-/*text blocks*/
-section h1, h2 {
-  text-align: center;
-}
-article, form {
-  background-color: white;
+/*order form*/
+.subscribe_form {
+  width: 300px;
+  border-radius: 8px;
   padding: 2%;
-  border-radius: 10px;
+}
+legend {
+  font-size: 1.25em;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+fieldset {
+  border-radius: 8px;
+  padding: 6px;
+  background-color: #dddddd;
+}
+label, input, button {
+  cursor: pointer;
+}
+input, button {
+  height: 2em;
+  width: 99%;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 2px;
+  padding-left: 4px;
+}
+label {
+  margin-left: 5px;
+  font-size: .6em;
+  text-transform: uppercase;
+}
+.subscribe_button {
+  margin-top: 5px;
+  text-align: center;
 }
 /*footer*/
 footer{
@@ -35,10 +56,10 @@ footer{
   text-align: center;
   clear: both;
 }
-.bottom_nav {
-  text-align: right;
-  padding-top: 1em;
+/*utilities*/
+.float_left {
+  float: left;
 }
-.bottom_nav a {
-  margin: 2em;
+.float_right {
+  float: right;
 }

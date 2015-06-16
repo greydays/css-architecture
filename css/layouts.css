@@ -1,15 +1,25 @@
 header, main, footer {
-  width: 100%;
+  max-width: 1000px;
+  min-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+}
+section {
+  margin-top: 1em;
 }
 .container {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .half_wide {
   float: left;
   width: 44%;
+  min-width: 300px;
   margin-left: 2%;
 }
 .full_wide {
@@ -18,14 +28,50 @@ header, main, footer {
   margin-left: auto;
   clear: both;
 }
-article {
-  margin-bottom: 3em;
-  line-height: 1.5em;
+/*header*/
+.header_flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 5em;
 }
-/*utilities*/
-.float_left {
-  float: left;
-}
-.float_right {
+.top_nav {
+  min-width: 250px;
   float: right;
+}
+.nav_link {
+  margin-right: 4%;
+  margin-left: 4%;
+  display: inline;
+}
+.logo {
+  margin-bottom: 0;
+  margin-left: 1em;
+  min-width: 250px;
+}
+/*main*/
+section h1, h2 {
+  text-align: center;
+}
+article {
+  line-height: 1.5em;
+  padding: 2%;
+}
+.mission {
+  clear: both;
+}
+.subscribe {
+  min-height: 300px;
+}
+/*footer*/
+.footer_nav {
+  text-align: right;
+  padding-top: 1em;
+}
+.footer_nav_link {
+  margin: 1.5em;
+}
+.copyright_text {
+  padding-top: 1em;
 }

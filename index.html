@@ -13,12 +13,17 @@
   </head>
   <body>
     <header>
-      <img class="logo_img float_left" src="images/logo.svg" /><h1 class="logo float_left">Awesome Site, LLC</h1>
-      <nav class="float_right top_nav">
-        <a class="nav_link" href="index.html">Home</a>
-        <a class="nav_link" href="contact.html">Contact</a>
-        <a class="nav_link" href="foo.html">Foo</a>
-      </nav>
+      <a href="index.html">
+        <img class="logo_img float_left" src="images/logo.svg" />
+      </a>
+      <div class="header_flex">
+        <h1 class="logo">Awesome Site, LLC</h1>
+        <nav class="top_nav">
+          <a class="nav_link" href="index.html">Home</a>
+          <a class="nav_link" href="contact.html">Contact</a>
+          <a class="nav_link" href="foo.html">Foo</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="subscribe container">
@@ -28,8 +33,8 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
         <form class="subscribe_form half_wide">
+          <legend>Subscribe to Awesome Site!</legend>
           <fieldset>
-            <legend>Subscribe to Awesome Site!</legend>
             <ol>
               <li>
                 <label for='name'>Name</label>
@@ -44,11 +49,11 @@
                 <input id="password" name="password" type="text" placeholder="password" required>
               </li>
               <li>
-                <label for="c">Confirm Password</label>
-                <input id="confirm" name="email" type="text" placeholder="confirm" required>
+                <label for="confirm">Confirm</label>
+                <input id="confirm" name="email" type="text" placeholder="confirm password" required>
               </li>
-              <li>
-                <button>Submit</button>
+              <li class="subscribe_button">
+                <button>Subscribe</button>
               </li>
             </ol>
           </fieldset>
@@ -78,12 +83,12 @@
       </section>
     </main>
     <footer>
-      <nav class="bottom_nav">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="foo.html">Foo</a>
+      <nav class="footer_nav">
+        <a class="footer_nav_link" href="index.html">Home</a>
+        <a class="footer_nav_link" href="contact.html">Contact</a>
+        <a class="footer_nav_link" href="foo.html">Foo</a>
       </nav>
-      <p>&copy - 2015 Awesome Site LLC</p>
+      <p class="copyright_text">&copy - 2015 Awesome Site LLC</p>
     </footer>
   </body>
 </html>
