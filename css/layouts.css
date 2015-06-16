@@ -62,7 +62,7 @@ article {
   clear: both;
 }
 .subscribe {
-  min-height: 300px;
+  padding-bottom: 1px;
 }
 /*footer*/
 .footer_nav {

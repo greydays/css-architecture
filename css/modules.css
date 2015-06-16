@@ -5,8 +5,8 @@
   margin-bottom: 1em;
   overflow: auto;
 }
-/*body*/
-section:nth-child(even) {
+/*main*/
+.mission {
   background-color: #979EAA;
 }
 /*order form*/
