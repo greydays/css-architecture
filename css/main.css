@@ -1,3 +1,31 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+textarea {
+  overflow: auto;
+}
+/*END NORMALIZE STYLES*/
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -8,7 +36,7 @@ a, abbr, acronym, address, code, em, img, strong,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
+footer, header,
 menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -29,6 +57,8 @@ body {
 ol, ul {
   list-style: none;
 }
+/*END MEYER RESET STYLES*/
+
 /*base styles*/
 h1, h2, h3, h4, p, a {
   font-family: Helvetica, sans-serif;
@@ -45,11 +75,13 @@ a {
   text-decoration: none;
   color: white;
 }
-em{
+strong {
   text-transform: uppercase;
   font-weight: bold;
 }
 fieldset, form, label, input, legend {
   font-family: Arial, sans-serif;
 }
-
+label, input, button {
+  cursor: pointer;
+}

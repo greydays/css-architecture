@@ -5,14 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>CSS - Architecture</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layouts.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/states.css">
   </head>
   <body>
-    <header>
+    <header class="home_header">
       <a href="index.html">
         <img class="logo_img float_left" src="images/logo.svg" />
       </a>
@@ -33,27 +32,27 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
         <form class="subscribe_form half_wide">
-          <legend>Subscribe to Awesome Site!</legend>
-          <fieldset>
+          <legend class="subscribe_legend">Subscribe to Awesome Site!</legend>
+          <fieldset class="subscribe_fieldset">
             <ol>
               <li>
-                <label for='name'>Name</label>
-                <input id="name" name="name" type="text" placeholder="First/Last Name" class="stored" required>
+                <label class="subscribe_label" for='name'>Name</label>
+                <input class="subscribe_input" id="name" name="name" type="text" placeholder="First/Last Name" class="stored" required>
               </li>
               <li>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="example@domain.com" class="stored" required>
+                <label class="subscribe_label" for="email">Email</label>
+                <input class="subscribe_input" id="email" name="email" type="email" placeholder="example@domain.com" class="stored" required>
               </li>
               <li>
-                <label for="password">Password</label>
-                <input id="password" name="password" type="text" placeholder="password" required>
+                <label class="subscribe_label" for="password">Password</label>
+                <input class="subscribe_input" id="password" name="password" type="text" placeholder="password" required>
               </li>
               <li>
-                <label for="confirm">Confirm</label>
-                <input id="confirm" name="email" type="text" placeholder="confirm password" required>
+                <label class="subscribe_label" for="confirm">Confirm</label>
+                <input class="subscribe_input" id="confirm" name="email" type="text" placeholder="confirm password" required>
               </li>
-              <li class="subscribe_button">
-                <button>Subscribe</button>
+              <li>
+                <button class="subscribe_button">Subscribe</button>
               </li>
             </ol>
           </fieldset>
@@ -67,7 +66,7 @@
         </article>
       </section>
       <section class="about_us container">
-        <h1 class="full_wide"><em>Behold the Awesome</em></h1>
+        <h1 class="full_wide"><strong>Behold the Awesome</strong></h1>
         <article class="what_we_do half_wide">
           <h2>Heading Two</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -82,7 +81,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="home_footer">
       <nav class="footer_nav">
         <a class="footer_nav_link" href="index.html">Home</a>
         <a class="footer_nav_link" href="contact.html">Contact</a>
