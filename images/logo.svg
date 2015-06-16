@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="186px" height="113px" viewBox="0 0 186 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="186px" height="81px" viewBox="0 0 186 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup">
-            <ellipse id="Oval-1" fill="#FCEFE4" sketch:type="MSShapeGroup" cx="93" cy="56.5" rx="93" ry="56.5"></ellipse>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, -11.000000)">
+            <path d="M150.310716,92 C172.038036,81.6575444 186,65.5693422 186,47.5 C186,33.585504 177.720639,20.8458121 163.991547,11 L163.991547,11 L22.0084526,11 C8.27936058,20.8458121 0,33.585504 0,47.5 C0,65.5693422 13.9619643,81.6575444 35.6892838,92 L150.310716,92 Z" id="Oval-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
             <text id="Awe" sketch:type="MSTextLayer" font-family="Helvetica" font-size="48" font-weight="bold" fill="#D0011B">
-                <tspan x="20" y="56">Awe</tspan>
+                <tspan x="20" y="47">Awe</tspan>
             </text>
             <text id="site" sketch:type="MSTextLayer" font-family="Helvetica" font-size="48" font-weight="normal" fill="#D0011B">
-                <tspan x="62" y="98">site</tspan>
+                <tspan x="62" y="89">site</tspan>
             </text>
             <text id="some" sketch:type="MSTextLayer" font-family="Helvetica" font-size="48" font-weight="normal" fill="#000000">
-                <tspan x="56" y="74">some</tspan>
+                <tspan x="56" y="65">some</tspan>
             </text>
         </g>
     </g>

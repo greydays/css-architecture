@@ -10,27 +10,24 @@
     <link rel="stylesheet" href="css/layouts.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/states.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <header>
-      <h1><img src="images/logo.svg" />Awesome Site</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="foo.html">Foo</a>
+      <img class="logo_img float_left" src="images/logo.svg" /><h1 class="logo float_left">Awesome Site, LLC</h1>
+      <nav class="float_right top_nav">
+        <a class="nav_link" href="index.html">Home</a>
+        <a class="nav_link" href="contact.html">Contact</a>
+        <a class="nav_link" href="foo.html">Foo</a>
       </nav>
     </header>
     <main>
-      <section>
-        <article>
+      <section class="subscribe container">
+        <article class="subscribe_benefits half_wide">
           <h2>Heading Two</h2>
           <h3>Heading Three</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
-      </section>
-      <section>
-        <form>
+        <form class="subscribe_form half_wide">
           <fieldset>
             <legend>Subscribe to Awesome Site!</legend>
             <ol>
@@ -50,26 +47,29 @@
                 <label for="c">Confirm Password</label>
                 <input id="confirm" name="email" type="text" placeholder="confirm" required>
               </li>
+              <li>
+                <button>Submit</button>
+              </li>
             </ol>
           </fieldset>
         </form>
       </section>
-      <section>
-        <article>
+      <section class="mission container">
+        <article class="who_we_are full_wide">
           <h2>Heading Two</h2>
           <h3>Heading Three</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
       </section>
-      <section>
-        <h1>Behold the Awesome</h1>
-        <article>
+      <section class="about_us container">
+        <h1 class="full_wide"><em>Behold the Awesome</em></h1>
+        <article class="what_we_do half_wide">
           <h2>Heading Two</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
-        <article>
+        <article class="why_you_need_us half_wide">
           <h2>Heading Two</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -78,7 +78,7 @@
       </section>
     </main>
     <footer>
-      <nav>
+      <nav class="bottom_nav">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="foo.html">Foo</a>

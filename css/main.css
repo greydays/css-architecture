@@ -1,0 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, abbr, acronym, address, code, em, img, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+/*base styles*/
+h1, h2, h3, h4, p, a {
+  font-family: Helvetica, sans-serif;
+}
+h1, h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+nav {
+  text-transform: uppercase;
+  font-style: bold;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+em{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+fieldset, form, label, input, legend {
+  font-family: Arial, sans-serif;
+}
+label, input {
+  font-size: .75em;
+}

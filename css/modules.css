@@ -1,0 +1,44 @@
+
+/*header*/
+header {
+  min-height: 5em;
+  background-color: #979EAA;
+  margin-bottom: 2em;
+}
+.logo, .top_nav {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5em;
+  top: 1.5em;
+}
+.top_nav {
+  display: inline;
+}
+.logo, .nav_link {
+  margin-right: 4%;
+  margin-left: 4%;
+}
+/*text blocks*/
+section h1, h2 {
+  text-align: center;
+}
+article, form {
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+}
+/*footer*/
+footer{
+  height: 5em;
+  margin-top: 2em;
+  background-color: #D0021B;
+  text-align: center;
+  clear: both;
+}
+.bottom_nav {
+  text-align: right;
+  padding-top: 1em;
+}
+.bottom_nav a {
+  margin: 2em;
+}

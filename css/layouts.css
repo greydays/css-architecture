@@ -1,0 +1,31 @@
+header, main, footer {
+  width: 100%;
+}
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.half_wide {
+  float: left;
+  width: 44%;
+  margin-left: 2%;
+}
+.full_wide {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+}
+article {
+  margin-bottom: 3em;
+  line-height: 1.5em;
+}
+/*utilities*/
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
