@@ -1,13 +1,12 @@
-
 /*header*/
-header {
+.home_header {
   min-height: 5em;
   background-color: #979EAA;
   margin-bottom: 1em;
+  overflow: auto;
 }
-
-/*body*/
-section:nth-child(even) {
+/*main*/
+.mission {
   background-color: #979EAA;
 }
 /*order form*/
@@ -16,21 +15,18 @@ section:nth-child(even) {
   border-radius: 8px;
   padding: 2%;
 }
-legend {
+.subscribe_legend {
   font-size: 1.25em;
   width: 300px;
   text-align: center;
   margin-bottom: 1em;
 }
-fieldset {
+.subscribe_fieldset {
   border-radius: 8px;
   padding: 6px;
   background-color: #dddddd;
 }
-label, input, button {
-  cursor: pointer;
-}
-input, button {
+.subscribe_input, .subscribe_button {
   height: 2em;
   width: 99%;
   font-size: 1em;
@@ -39,7 +35,7 @@ input, button {
   margin-bottom: 2px;
   padding-left: 4px;
 }
-label {
+.subscribe_label {
   margin-left: 5px;
   font-size: .6em;
   text-transform: uppercase;
@@ -49,7 +45,7 @@ label {
   text-align: center;
 }
 /*footer*/
-footer{
+.home_footer {
   height: 5em;
   margin-top: 2em;
   background-color: #D0021B;
@@ -62,4 +58,23 @@ footer{
 }
 .float_right {
   float: right;
+}
+/*clear fix*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.box-set {
+  background: #e8eae9;
+  float: left;
+  width: 100%;
+  overflow: auto;
 }

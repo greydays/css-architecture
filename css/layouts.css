@@ -4,9 +4,6 @@ header, main, footer {
   margin-right: auto;
   margin-left: auto;
 }
-section {
-  margin-top: 1em;
-}
 .container {
   position: relative;
   display:flex;
@@ -43,7 +40,7 @@ section {
 .nav_link {
   margin-right: 4%;
   margin-left: 4%;
-  display: inline;
+  display: inline-block;
 }
 .logo {
   margin-bottom: 0;
@@ -51,6 +48,9 @@ section {
   min-width: 250px;
 }
 /*main*/
+section {
+  margin-top: 1em;
+}
 section h1, h2 {
   text-align: center;
 }
@@ -62,7 +62,7 @@ article {
   clear: both;
 }
 .subscribe {
-  min-height: 300px;
+  padding-bottom: 1px;
 }
 /*footer*/
 .footer_nav {
