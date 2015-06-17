@@ -67,11 +67,15 @@ article {
 /*footer*/
 .footer_nav {
   text-align: right;
-  padding-top: 1em;
+  padding-top: .5em;
 }
 .footer_nav_link {
   margin: 1.5em;
 }
 .copyright_text {
-  padding-top: 1em;
+  padding-top: .5em;
+}
+.social_links {
+  margin-top: .5em;
+  padding-bottom: .5em;
 }
