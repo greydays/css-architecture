@@ -1,3 +1,14 @@
 a:hover {
   font-style: italic;
 }
+@media (max-width: 500px)  {
+  nav, article, form, h1, h2 {
+    display: block;
+    width: 360;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .footer_nav {
+    text-align: center;
+  }
+}

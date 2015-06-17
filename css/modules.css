@@ -6,12 +6,16 @@
   overflow: auto;
 }
 /*main*/
-.mission {
+.endorsement {
   background-color: #979EAA;
+}
+.endorsement_quote {
+  font-style: italic;
+  font-size: 1.25em;
 }
 /*order form*/
 .subscribe_form {
-  width: 300px;
+  width: 350px;
   border-radius: 8px;
   padding: 2%;
 }
@@ -37,20 +41,27 @@
 }
 .subscribe_label {
   margin-left: 5px;
-  font-size: .6em;
+  font-size: .7em;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .subscribe_button {
   margin-top: 5px;
   text-align: center;
+  text-transform: uppercase;
 }
 /*footer*/
 .home_footer {
-  height: 5em;
+  height: 8em;
   margin-top: 2em;
   background-color: #D0021B;
   text-align: center;
   clear: both;
+}
+.social_links {
+  font-size: 24px;
+  color: #999;
+  margin-top: .5em;
 }
 /*utilities*/
 .float_left {
