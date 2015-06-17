@@ -1,12 +1,11 @@
-header, main, footer {
-  max-width: 1000px;
-  min-width: 360px;
+.boundary {
+  max-width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
 .container {
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,15 +14,13 @@ header, main, footer {
 }
 .half_wide {
   float: left;
-  width: 44%;
-  min-width: 300px;
-  margin-left: 2%;
+  width: 42%;
+  min-width: 320px;
 }
 .full_wide {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  clear: both;
 }
 /*header*/
 .header_flex {
@@ -34,20 +31,19 @@ header, main, footer {
   height: 5em;
 }
 .top_nav {
-  min-width: 250px;
-  float: right;
+  text-align: right;
 }
 .nav_link {
-  margin-right: 4%;
-  margin-left: 4%;
-  display: inline-block;
+  margin: 0 4%;
 }
 .logo {
   margin-bottom: 0;
   margin-left: 1em;
-  min-width: 250px;
 }
 /*main*/
+h2 {
+  margin-bottom: 1em;
+}
 section {
   margin-top: 1em;
 }
@@ -55,14 +51,14 @@ section h1, h2 {
   text-align: center;
 }
 article {
-  line-height: 1.5em;
-  padding: 2%;
+  line-height: 1.563em;
+  padding: 1.25em;
 }
 .mission {
   clear: both;
 }
-.subscribe {
-  padding-bottom: 1px;
+.endorsement_article {
+  max-width: 800px;
 }
 /*footer*/
 .footer_nav {

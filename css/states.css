@@ -2,13 +2,20 @@ a:hover {
   font-style: italic;
 }
 @media (max-width: 500px)  {
-  nav, article, form, h1, h2 {
-    display: block;
-    width: 360;
+  .boundary{
     margin-right: 0;
+    margin-left: 0;
+  }
+  article, form, h1, h2, form {
+    display: block;
+    width: 80%;
+    margin-right: auto;
     margin-left: auto;
   }
   .footer_nav {
     text-align: center;
+  }
+  .logo {
+    display: none;
   }
 }

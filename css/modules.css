@@ -1,13 +1,15 @@
 /*header*/
 .home_header {
   min-height: 5em;
-  background-color: #979EAA;
+  background-color: #11709D;
   margin-bottom: 1em;
   overflow: auto;
+  color: white;
 }
 /*main*/
 .endorsement {
-  background-color: #979EAA;
+  background-color: #11709D;
+  color: white;
 }
 .endorsement_quote {
   font-style: italic;
@@ -15,20 +17,19 @@
 }
 /*order form*/
 .subscribe_form {
-  width: 350px;
   border-radius: 8px;
-  padding: 2%;
+  text-align: center;
+  max-width: 25em;
+  min-width: 20em;
 }
 .subscribe_legend {
-  font-size: 1.25em;
-  width: 300px;
-  text-align: center;
-  margin-bottom: 1em;
+  font-size: 1.563em;
+  margin: 1em auto 1em auto;
 }
 .subscribe_fieldset {
   border-radius: 8px;
   padding: 6px;
-  background-color: #dddddd;
+  background-color: #979EAA;
 }
 .subscribe_input, .subscribe_button {
   height: 2em;
@@ -56,10 +57,10 @@
   background-color: #D0021B;
   text-align: center;
   clear: both;
+  color: white;
 }
 .social_links {
   font-size: 24px;
-  color: #999;
 }
 /*utilities*/
 .float_left {
