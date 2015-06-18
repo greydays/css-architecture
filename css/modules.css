@@ -7,16 +7,32 @@
 }
 /*main*/
 .endorsement {
-  background-color: #11709D;
   color: white;
 }
 .endorsement_quote {
   font-style: italic;
   font-size: 1.25em;
 }
+.treeback_background {
+  background-image: url("../images/treeback.svg");
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tree_back {
+  background-image: url("../images/tree.svg");
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+       -o-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 /*order form*/
 .subscribe_form {
-  border-radius: 8px;
+  border-radius: .5em;
   text-align: center;
   max-width: 25em;
   min-width: 19em;
@@ -26,7 +42,7 @@
   margin: 1em auto 1em auto;
 }
 .subscribe_fieldset {
-  border-radius: 8px;
+  border-radius: .5em;
   padding: .375em;
   background-color: #979EAA;
 }
@@ -34,7 +50,7 @@
   height: 2em;
   width: 99%;
   font-size: 1em;
-  border-radius: 6px;
+  border-radius: .375em;
   border: none;
   margin-bottom: .125em;
   padding-left: .25em;
@@ -49,6 +65,8 @@
   margin-top: .3125em;
   text-align: center;
   text-transform: uppercase;
+  background-color: #11709D;
+  color: white;
 }
 /*footer*/
 .home_footer {

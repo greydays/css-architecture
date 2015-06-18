@@ -11,9 +11,10 @@
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
-}
-.half_wide {
-  min-width: 19.5em;
+  -webkit-flex-flow: row wrap;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
 }
 .full_wide {
   width: 80%;
