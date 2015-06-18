@@ -1,67 +1,83 @@
 /*header*/
 .home_header {
-  min-height: 5em;
-  background-color: #979EAA;
+/*  min-height: 5em;*/
+  background-color: #11709D;
   margin-bottom: 1em;
-  overflow: auto;
+  color: white;
 }
 /*main*/
 .endorsement {
-  background-color: #979EAA;
+  color: white;
 }
 .endorsement_quote {
   font-style: italic;
   font-size: 1.25em;
 }
+.treeback_background {
+  background-image: url("../images/treeback.svg");
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tree_back {
+  background-image: url("../images/tree.svg");
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+       -o-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 /*order form*/
 .subscribe_form {
-  width: 350px;
-  border-radius: 8px;
-  padding: 2%;
+  border-radius: .5em;
+  text-align: center;
+  max-width: 25em;
+  min-width: 19em;
 }
 .subscribe_legend {
-  font-size: 1.25em;
-  width: 300px;
-  text-align: center;
-  margin-bottom: 1em;
+  font-size: 1.563em;
+  margin: 1em auto 1em auto;
 }
 .subscribe_fieldset {
-  border-radius: 8px;
-  padding: 6px;
-  background-color: #dddddd;
+  border-radius: .5em;
+  padding: .375em;
+  background-color: #979EAA;
 }
 .subscribe_input, .subscribe_button {
   height: 2em;
   width: 99%;
   font-size: 1em;
-  border-radius: 6px;
+  border-radius: .375em;
   border: none;
-  margin-bottom: 2px;
-  padding-left: 4px;
+  margin-bottom: .125em;
+  padding-left: .25em;
 }
 .subscribe_label {
-  margin-left: 5px;
+  margin-left: .3125em;
   font-size: .7em;
   font-weight: bold;
   text-transform: uppercase;
 }
 .subscribe_button {
-  margin-top: 5px;
+  margin-top: .3125em;
   text-align: center;
   text-transform: uppercase;
+  background-color: #11709D;
+  color: white;
 }
 /*footer*/
 .home_footer {
-  height: 8em;
   margin-top: 2em;
   background-color: #D0021B;
   text-align: center;
   clear: both;
+  color: white;
 }
 .social_links {
-  font-size: 24px;
-  color: #999;
-  margin-top: .5em;
+  font-size: 1.5em;
 }
 /*utilities*/
 .float_left {

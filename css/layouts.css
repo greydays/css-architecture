@@ -1,53 +1,34 @@
-header, main, footer {
-  max-width: 1000px;
-  min-width: 360px;
+.boundary {
+  max-width: 60em;
   margin-right: auto;
   margin-left: auto;
 }
 .container {
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
-}
-.half_wide {
-  float: left;
-  width: 44%;
-  min-width: 300px;
-  margin-left: 2%;
+  -webkit-flex-flow: row wrap;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
 }
 .full_wide {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  clear: both;
 }
 /*header*/
-.header_flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 5em;
-}
 .top_nav {
-  min-width: 250px;
-  float: right;
-}
-.nav_link {
-  margin-right: 4%;
-  margin-left: 4%;
-  display: inline-block;
-}
-.logo {
-  margin-bottom: 0;
-  margin-left: 1em;
-  min-width: 250px;
+  text-align: right;
 }
 /*main*/
+h2 {
+  margin-bottom: 1em;
+}
 section {
   margin-top: 1em;
 }
@@ -55,23 +36,27 @@ section h1, h2 {
   text-align: center;
 }
 article {
-  line-height: 1.5em;
-  padding: 2%;
+  line-height: 1.563em;
+  padding: 1.25em;
 }
 .mission {
   clear: both;
 }
-.subscribe {
-  padding-bottom: 1px;
+.endorsement_article {
+  max-width: 50em;
 }
 /*footer*/
 .footer_nav {
   text-align: right;
-  padding-top: 1em;
+  padding-top: .5em;
 }
 .footer_nav_link {
   margin: 1.5em;
 }
 .copyright_text {
-  padding-top: 1em;
+  padding-top: .5em;
+}
+.social_links {
+  margin-top: .5em;
+  padding-bottom: .5em;
 }
