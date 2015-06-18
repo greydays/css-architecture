@@ -1,5 +1,5 @@
 .boundary {
-  max-width: 960px;
+  max-width: 60em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -13,9 +13,7 @@
   align-items: flex-start;
 }
 .half_wide {
-  float: left;
-  width: 42%;
-  min-width: 320px;
+  min-width: 19.5em;
 }
 .full_wide {
   width: 80%;
@@ -23,22 +21,8 @@
   margin-left: auto;
 }
 /*header*/
-.header_flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 5em;
-}
 .top_nav {
   text-align: right;
-}
-.nav_link {
-  margin: 0 4%;
-}
-.logo {
-  margin-bottom: 0;
-  margin-left: 1em;
 }
 /*main*/
 h2 {
@@ -58,7 +42,7 @@ article {
   clear: both;
 }
 .endorsement_article {
-  max-width: 800px;
+  max-width: 50em;
 }
 /*footer*/
 .footer_nav {
