@@ -1,9 +1,17 @@
 a:hover {
   font-style: italic;
 }
-.subscribe_button:hover {
-  background-color: #00B233;
+.subscribe_button {
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear;
 }
+.subscribe_button:active {
+  box-shadow: 0 2px 0 #007F25;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+/*media queries*/
+  /*base styles for mobile*/
 @media (max-width: 500px)  {
   .home_header {
     height: 3em;
@@ -33,18 +41,21 @@ a:hover {
     border-radius: 2em;
   }
 }
+  /*sets all major blocks to full-width*/
+  /* on smaller screens*/
 @media (max-width: 600px) {
   .boundary{
     margin-right: 0;
     margin-left: 0;
   }
-  article, form, h1, h2, form {
+  article, form, h1, h2 {
     display: block;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
   }
 }
+  /*large header for larger screens*/
 @media (min-width: 501px)  {
   .home_header {
     height: 5em;
@@ -60,9 +71,21 @@ a:hover {
     padding-top: .5em;
   }
 }
+  /*starts flexbox columns for major blocks*/
 @media (min-width: 601px) {
   .half_wide {
     float: left;
     width: 42%;
+  }
+  /*animations for larger screens*/
+  .endorsement_quote {
+    opacity:0;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.2s;
+  }
+  .endorsement:hover .endorsement_quote {
+    opacity:1;
+    transform: scale(1);
+    transition-delay: 0.2s;
   }
 }

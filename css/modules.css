@@ -16,8 +16,6 @@
 .treeback_background {
   background-image: url("../images/treeback.svg");
   -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
           background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,8 +23,6 @@
 .tree_back {
   background-image: url("../images/tree.svg");
   -webkit-background-size: 100% 100%;
-     -moz-background-size: 100% 100%;
-       -o-background-size: 100% 100%;
           background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -65,8 +61,9 @@
   margin-top: .3125em;
   text-align: center;
   text-transform: uppercase;
-  background-color: #11709D;
+  background-color: #00B233;
   color: white;
+  box-shadow: 0 5px 0 #007F25;
 }
 /*footer*/
 .home_footer {
