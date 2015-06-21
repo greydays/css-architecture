@@ -42,8 +42,21 @@ article {
 .mission {
   clear: both;
 }
+.endorsement {
+  position: relative;
+}
 .endorsement_article {
   max-width: 50em;
+  overflow: hidden;
+  z-index: 2;
+}
+.tree_animation {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 /*footer*/
 .footer_nav {

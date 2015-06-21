@@ -20,12 +20,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.tree_back {
-  background-image: url("../images/tree.svg");
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+
 /*order form*/
 .subscribe_form {
   border-radius: .5em;
