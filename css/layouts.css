@@ -5,16 +5,16 @@
 }
 .container {
   position: relative;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-flow: row wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+          justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
-  -webkit-flex-flow: row wrap;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  -webkit-justify-content: center;
 }
 .full_wide {
   width: 80%;
@@ -42,8 +42,22 @@ article {
 .mission {
   clear: both;
 }
+.endorsement {
+  position: relative;
+}
 .endorsement_article {
   max-width: 50em;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.tree_animation {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 /*footer*/
 .footer_nav {
