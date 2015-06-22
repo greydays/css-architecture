@@ -12,7 +12,7 @@ a:hover {
 }
 /*media queries*/
   /*base styles for mobile*/
-@media (max-width: 500px)  {
+@media (max-width: 31.25em)  {
   .home_header {
     height: 3em;
   }
@@ -43,7 +43,7 @@ a:hover {
 }
   /*sets all major blocks to full-width*/
   /* on smaller screens*/
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .boundary{
     margin-right: 0;
     margin-left: 0;
@@ -62,7 +62,7 @@ a:hover {
   }
 }
   /*large header for larger screens*/
-@media (min-width: 501px)  {
+@media (min-width: 31.3125em)  {
   .home_header {
     height: 5em;
   }
@@ -78,7 +78,7 @@ a:hover {
   }
 }
   /*starts flexbox columns for major blocks*/
-@media (min-width: 601px) {
+@media (min-width: 37.5625em) {
   .half_wide {
     float: left;
     width: 42%;
