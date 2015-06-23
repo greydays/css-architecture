@@ -23,13 +23,34 @@
         <nav class="top_nav">
           <a class="nav_link" href="index.html">Home</a>
           <a class="nav_link" href="contact.html">Contact</a>
-          <a class="nav_link" href="video.html">Foo</a>
+          <a class="nav_link" href="video.html">Video</a>
         </nav>
       </div>
     </header>
     <main>
-      <section>
-
+      <section class="container">
+        <article class="boundary full_wide video_blog">
+          <h2>This is a video!</h2>
+          <!-- http://blog.teamtreehouse.com/building-custom-controls-for-html5-videos -->
+          <div id="video-container" class="video_container">
+            <video id="video" width="432" height="240">
+              <source src="video.webm" type="video/webm">
+            </video>
+            <div id="video-controls">
+              <button type="button" id="play-pause">></button>
+              <input type="range" id="seek-bar" value="0">
+              <label>Vol</label>
+              <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+              <button type="button" id="mute">Mute</button>
+              <button type="button" id="full-screen">Full-Screen</button>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
       </section>
     </main>
     <footer class="home_footer">
@@ -37,7 +58,7 @@
         <nav class="footer_nav">
           <a class="footer_nav_link" href="index.html">Home</a>
           <a class="footer_nav_link" href="contact.html">Contact</a>
-          <a class="footer_nav_link" href="foo.html">Foo</a>
+          <a class="footer_nav_link" href="video.html">Video</a>
         </nav>
         <p class="copyright_text">&copy - 2015 Awesome Site LLC</p>
         <div class="social_links">
@@ -53,6 +74,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/video.js"></script>
   </body>
 </html>

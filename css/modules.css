@@ -71,6 +71,16 @@
 .social_links {
   font-size: 1.5em;
 }
+/*video*/
+.video_blog {
+  text-align: center;
+}
+.video_container {
+  margin-bottom: 1em;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 1em;
+}
 /*utilities*/
 .float_left {
   float: left;
