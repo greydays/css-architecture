@@ -92,7 +92,7 @@ a:hover {
     -webkit-transition: all 0.3s ease-in-out 0.2s;
             transition: all 0.3s ease-in-out 0.2s;
   }
-  .endorsement_article:hover .endorsement_quote {
+  .endorsement_quote_animated {
     opacity:1;
     -webkit-transform: scale(1);
             transform: scale(1);
