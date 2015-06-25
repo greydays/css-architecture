@@ -15,7 +15,7 @@ var pswdOne = document.getElementById('password');
 var pswdTwo = document.getElementById('confirm');
 var submit = document.getElementById('subscribe_button');
 function checkForm() {
-  var = re = /^\w+$/;
+  var re = /^\w+$/;
     if(!re.test(form.username.value)) {
       alert("Error: Username must contain only letters, numbers and underscores!");
       form.username.focus();
