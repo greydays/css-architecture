@@ -15,6 +15,12 @@ var pswdOne = document.getElementById('password');
 var pswdTwo = document.getElementById('confirm');
 var submit = document.getElementById('subscribe_button');
 function checkForm() {
+  var = re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }
   if(pswdOne.value != "" && pswdOne.value == pswdTwo.value) {
     if(pswdOne.value.length < 6) {
       pswdTwo.setCustomValidity("Error: Password must contain at least six characters!");
