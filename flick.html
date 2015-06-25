@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flickr API Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/states.css">
+    <script src="js/modernizr.custom.52318.js"></script>
+  </head>
+  <body>
+    <header class="home_header">
+      <div class="boundary">
+        <a href="index.html">
+          <img class="float_left logo_img" src="images/logo.svg" />
+        </a>
+        <h1 class="logo">Awesome Site, LLC</h1>
+        <nav class="top_nav">
+          <a class="nav_link" href="index.html">Home</a>
+          <a class="nav_link" href="flick.html">Flickr API</a>
+          <a class="nav_link" href="video.html">Video</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <article class="boundary full_wide">
+          <h2>Awesome Photo Grab!</h2>
+          <p class="photo_api_p">Enter tags into the form, separated by commas. Photos requested will have ALL tags, including "awesome."</p>
+          <form>
+            <input class="" id="flick_tags" name="flick_tags" type="text" placeholder="Enter tags, separated by commas" autofocus />
+            <button id="get_photos">Get Awesome Photos!</button>
+          </form>
+          <div class="album">
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="home_footer">
+      <div class="boundary">
+        <nav class="footer_nav">
+          <a class="footer_nav_link" href="index.html">Home</a>
+          <a class="nav_link" href="flick.html">Flickr API</a>
+          <a class="footer_nav_link" href="video.html">Video</a>
+        </nav>
+        <p class="copyright_text">&copy - 2015 Awesome Site LLC</p>
+        <div class="social_links">
+          <a  href="https://plus.google.com/">
+            <span class="icon-google-plus"></span>
+          </a>
+          <a  href="https://twitter.com/">
+            <span class="icon-twitter"></span>
+          </a>
+          <a  href="https://www.facebook.com/">
+            <span class="icon-facebook2"></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/flick.js"></script>
+  </body>
+</html>
