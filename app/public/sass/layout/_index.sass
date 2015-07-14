@@ -1,10 +1,4 @@
-.boundary
-  max-width: 60em
-  margin-right: auto
-  margin-left: auto
-
-.container
-  position: relative
+%flex-box-centered
   display: -webkit-flex
   display: flex
   -webkit-flex-direction: row
@@ -16,16 +10,28 @@
   align-content: flex-start
   align-items: flex-start
 
+.boundary
+  max-width: 60em
+  margin-right: auto
+  margin-left: auto
+  @media (max-width: $max-tablet)
+    margin-right: 0
+    margin-left: 0
+
+.container
+  position: relative
+  @extend %flex-box-centered
+
 .full_wide
   width: 80%
   margin-right: auto
   margin-left: auto
 
-/*header*/
-.top_nav
-  text-align: right
+.half_wide
+  @media (min-width: $min-tablet)
+    float: left
+    width: 42%
 
-/*main*/
 h2
   margin-bottom: 1em
 
@@ -39,38 +45,15 @@ article
   line-height: 1.563em
   padding: 1.25em
 
+article, form, h1, h2
+  @media (max-width: $max-tablet)
+    display: block
+    width: 80%
+    margin-right: auto
+    margin-left: auto
+
 .mission
   clear: both
 
-.endorsement
-  position: relative
 
-.endorsement_article
-  max-width: 50em
-  position: relative
-  overflow: hidden
-  z-index: 10
-
-.tree_animation
-  position: absolute
-  margin: auto
-  top: 40%
-  left: 0
-  right: 0
-  z-index: 0
-
-/*footer*/
-.footer_nav
-  text-align: right
-  padding-top: 0.5em
-
-.footer_nav_link
-  margin: 1.5em
-
-.copyright_text
-  padding-top: 0.5em
-
-.social_links
-  margin-top: 0.5em
-  padding-bottom: 0.5em
 

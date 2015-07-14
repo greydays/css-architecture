@@ -47,8 +47,6 @@ body {
 ol, ul {
   list-style: none; }
 
-/*END MEYER RESET STYLES*/
-/*base styles*/
 h1, h3, h4, p, a {
   font-family: 'Fira Sans', Helvetica, sans-serif; }
 
@@ -57,6 +55,9 @@ h2, legend, blockquote {
 
 h1 {
   font-size: 1.953em; }
+  @media (max-width: 31.25em) {
+    h1 {
+      font-size: 1.25em; } }
 
 h2 {
   font-size: 1.563em; }
@@ -71,6 +72,8 @@ nav {
 a {
   text-decoration: none;
   color: white; }
+  a:hover {
+    font-style: italic; }
 
 strong {
   text-transform: uppercase;
@@ -118,7 +121,7 @@ legend {
 @font-face {
   font-family: 'Fira Sans';
   src: url("../fonts/FiraSans-Bold.eot");
-  src: local("Fira Sans Bold"), url("../fonts/FiraSans-Bold.eot") format("embedded-opentype"), url("../fonts/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-Bold.ttf") format("truetype");
+  src: local("Fira Sans Bold"), url("../fonts/FiraSans-Bold.eot") format("embeddedopentyp"), url("../fonts/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -150,6 +153,7 @@ legend {
   font-weight: bold;
   font-style: normal; }
 
+/*icon fonts*/
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?rd077y");
@@ -169,21 +173,15 @@ legend {
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-google-plus:before {
-  content: \ea88; }
+  content: "\ea88"; }
 
 .icon-facebook2:before {
-  content: \ea8d; }
+  content: "\ea8d"; }
 
 .icon-twitter:before {
-  content: \ea91; }
-
-.boundary {
-  max-width: 60em;
-  margin-right: auto;
-  margin-left: auto; }
+  content: "\ea91"; }
 
 .container {
-  position: relative;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -195,16 +193,28 @@ legend {
   align-content: flex-start;
   align-items: flex-start; }
 
+.boundary {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (max-width: 37.5em) {
+    .boundary {
+      margin-right: 0;
+      margin-left: 0; } }
+
+.container {
+  position: relative; }
+
 .full_wide {
   width: 80%;
   margin-right: auto;
   margin-left: auto; }
 
-/*header*/
-.top_nav {
-  text-align: right; }
+@media (min-width: 37.5625em) {
+  .half_wide {
+    float: left;
+    width: 42%; } }
 
-/*main*/
 h2 {
   margin-bottom: 1em; }
 
@@ -218,63 +228,60 @@ article {
   line-height: 1.563em;
   padding: 1.25em; }
 
+@media (max-width: 37.5em) {
+  article, form, h1, h2 {
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto; } }
+
 .mission {
   clear: both; }
 
-.endorsement {
-  position: relative; }
-
-.endorsement_article {
-  max-width: 50em;
-  position: relative;
-  overflow: hidden;
-  z-index: 10; }
-
-.tree_animation {
-  position: absolute;
-  margin: auto;
-  top: 40%;
-  left: 0;
-  right: 0;
-  z-index: 0; }
-
-/*footer*/
-.footer_nav {
-  text-align: right;
-  padding-top: 0.5em; }
-
-.footer_nav_link {
-  margin: 1.5em; }
-
-.copyright_text {
-  padding-top: 0.5em; }
-
-.social_links {
-  margin-top: 0.5em;
-  padding-bottom: 0.5em; }
-
-/*header*/
 .home_header {
   background-color: #11709D;
   margin-bottom: 1em;
   color: white; }
+  @media (max-width: 31.25em) {
+    .home_header {
+      height: 3em; } }
+  @media (min-width: 31.3125em) {
+    .home_header {
+      height: 5em; } }
 
-/*main*/
-.endorsement {
-  color: white; }
+@media (max-width: 31.25em) {
+  .logo_img {
+    width: 7em; } }
 
-.endorsement_quote {
-  font-style: italic;
-  font-size: 1.25em; }
+@media (max-width: 31.25em) {
+  .logo {
+    text-align: center; } }
 
-.treeback_background {
-  background-image: url("../../images/treeback.svg");
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+@media (min-width: 31.3125em) {
+  .logo {
+    margin: 0 0 0 6.5em;
+    padding-top: 0.5em; } }
 
-/*subscribe form*/
+.top_nav {
+  text-align: right; }
+  @media (max-width: 31.25em) {
+    .top_nav {
+      text-align: right;
+      margin-top: 0.8em;
+      margin-right: 4%; } }
+  @media (min-width: 31.3125em) {
+    .top_nav {
+      margin-top: 1em; } }
+
+@media (max-width: 31.25em) {
+  .nav_link {
+    margin: 0 0.25em 0 0.25em;
+    text-align: center; } }
+
+@media (min-width: 31.3125em) {
+  .nav_link {
+    margin: 0 1em; } }
+
 .subscribe_form {
   border-radius: 0.5em;
   text-align: center;
@@ -311,9 +318,91 @@ article {
   text-transform: uppercase;
   background-color: #00B233;
   color: white;
-  box-shadow: 0 5px 0 #007F25; }
+  box-shadow: 0 5px 0 #007F25;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
 
-/*footer*/
+.subscribe_button:active {
+  box-shadow: 0 2px 0 #007F25;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px); }
+
+.endorsement {
+  color: white;
+  position: relative; }
+  @media (max-width: 31.25em) {
+    .endorsement {
+      border-radius: 2em; } }
+
+.endorsement_article {
+  max-width: 50em;
+  position: relative;
+  overflow: hidden;
+  z-index: 10; }
+
+.endorsement_quote {
+  font-style: italic;
+  font-size: 1.25em;
+  /* http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */ }
+  @media (min-width: 37.5625em) {
+    .endorsement_quote {
+      opacity: 0;
+      -webkit-transform: scale(10);
+      transform: scale(10);
+      -webkit-transition: all 0.3s ease-in-out 0.2s;
+      transition: all 0.3s ease-in-out 0.2s; } }
+
+@media (min-width: 37.5625em) {
+  .endorsement_quote_animated {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s; } }
+
+.treeback_background {
+  background-image: url("../../images/treeback.svg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.tree_back {
+  /* http://jsfiddle.net/simurai/CGmCe/light/ */ }
+  @media (max-width: 37.5em) {
+    .tree_back {
+      background-image: url("../../images/tree.svg");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat; } }
+
+.tree_animation {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 0; }
+  @media (min-width: 37.5625em) {
+    .tree_animation {
+      width: 60px;
+      height: 100px;
+      background-image: url("../../images/tree-sprite2.png");
+      -webkit-animation: play 0.8s steps(7) infinite;
+      animation: play 0.8s steps(7) infinite; } }
+
+@-webkit-keyframes play {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -420px; } }
+
+@keyframes play {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -420px; } }
+
 .home_footer {
   margin-top: 2em;
   background-color: #D0021B;
@@ -321,20 +410,24 @@ article {
   clear: both;
   color: white; }
 
+.footer_nav {
+  text-align: right;
+  padding-top: 0.5em; }
+  @media (max-width: 31.25em) {
+    .footer_nav {
+      text-align: center; } }
+
+.footer_nav_link {
+  margin: 1.5em; }
+
+.copyright_text {
+  padding-top: 0.5em; }
+
 .social_links {
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
   font-size: 1.5em; }
 
-/*video*/
-.video_blog {
-  text-align: center; }
-
-.video_container {
-  margin-bottom: 1em;
-  border: 2px solid black;
-  display: inline-block;
-  padding: 1em; }
-
-/*flickr*/
 .photo_api_p {
   text-align: center;
   margin: 1em 0; }
@@ -355,6 +448,15 @@ article {
   padding: 0.2em;
   margin: 0.2em;
   background-color: white; }
+
+.video_blog {
+  text-align: center; }
+
+.video_container {
+  margin-bottom: 1em;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 1em; }
 
 /*utilities*/
 .float_left {
@@ -381,104 +483,3 @@ article {
   float: left;
   width: 100%;
   overflow: auto; }
-
-a:hover {
-  font-style: italic; }
-
-.subscribe_button {
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear; }
-
-.subscribe_button:active {
-  box-shadow: 0 2px 0 #007F25;
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px); }
-
-/*media queries*/
-/*base styles for mobile*/
-@media (max-width: 31.25em) {
-  .home_header {
-    height: 3em; }
-  .logo_img {
-    width: 7em; }
-  .logo {
-    text-align: center; }
-  .top_nav {
-    text-align: right;
-    margin-top: 0.8em;
-    margin-right: 4%; }
-  .nav_link {
-    margin: 0 0.25em 0 0.25em;
-    text-align: center; }
-  .footer_nav {
-    text-align: center; }
-  h1 {
-    font-size: 1.25em; }
-  .endorsement {
-    border-radius: 2em; }
-  /*sets all major blocks to full-width*/
-  /* on smaller screens*/ }
-
-@media (max-width: 37.5em) {
-  .boundary {
-    margin-right: 0;
-    margin-left: 0; }
-  article, form, h1, h2 {
-    display: block;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto; }
-  .tree_back {
-    background-image: url("../../images/tree.svg");
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat; } }
-
-/*large header for larger screens*/
-@media (min-width: 31.3125em) {
-  .home_header {
-    height: 5em; }
-  .top_nav {
-    margin-top: 1em; }
-  .nav_link {
-    margin: 0 1em; }
-  .logo {
-    margin: 0 0 0 6.5em;
-    padding-top: 0.5em; } }
-
-/*starts flexbox columns for major blocks*/
-@media (min-width: 37.5625em) {
-  .half_wide {
-    float: left;
-    width: 42%; }
-  /*animations for larger screens*/
-  /* http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */
-  .endorsement_quote {
-    opacity: 0;
-    -webkit-transform: scale(10);
-    transform: scale(10);
-    -webkit-transition: all 0.3s ease-in-out 0.2s;
-    transition: all 0.3s ease-in-out 0.2s; }
-  .endorsement_quote_animated {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s; }
-  /* http://jsfiddle.net/simurai/CGmCe/light/ */
-  .tree_animation {
-    width: 60px;
-    height: 100px;
-    background-image: url("../../images/tree-sprite2.png");
-    -webkit-animation: play 0.8s steps(7) infinite;
-    animation: play 0.8s steps(7) infinite; }
-  @-webkit-keyframes play {
-    from {
-      background-position: 0px; }
-    to {
-      background-position: -420px; } }
-  @keyframes play {
-    from {
-      background-position: 0px; }
-    to {
-      background-position: -420px; } } }
