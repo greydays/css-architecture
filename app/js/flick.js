@@ -17,7 +17,7 @@ var get = function(e) {
     $('.album').html(photoList);
   }
   $.getJSON(flickrAPI, options, showPhotos);
-  $('#flick_tags').val('')
+  $('#flick_tags').val('');
 };
 
 $('document').ready(function() {

@@ -1,0 +1,26 @@
+{
+  "name": "css-architecture",
+  "version": "1.0.0",
+  "description": "Project site for Front-end Web Development Accelerator ",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greydays/css-architecture.git"
+  },
+  "author": "Ryan Flaherty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greydays/css-architecture/issues"
+  },
+  "homepage": "https://github.com/greydays/css-architecture#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "express": "^4.13.1",
+    "node-sass": "^3.2.0"
+  }
+}
