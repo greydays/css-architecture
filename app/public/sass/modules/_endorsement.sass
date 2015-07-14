@@ -1,0 +1,71 @@
+.endorsement
+  color: white
+  position: relative
+  @media (max-width: $max-mobile)
+    border-radius: 2em
+
+.endorsement_article
+  max-width: 50em
+  position: relative
+  overflow: hidden
+  z-index: 10
+
+.endorsement_quote
+  font-style: italic
+  font-size: 1.25em
+  @media (min-width: $min-tablet)
+    opacity: 0
+    -webkit-transform: scale(10)
+    transform: scale(10)
+    -webkit-transition: all 0.3s ease-in-out 0.2s
+    transition: all 0.3s ease-in-out 0.2s
+
+  /* http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */
+.endorsement_quote_animated
+  @media (min-width: $min-tablet)
+    opacity: 1
+    -webkit-transform: scale(1)
+    transform: scale(1)
+    -webkit-transition-delay: 0.2s
+    transition-delay: 0.2s
+
+.treeback_background
+  background-image: url("../../images/treeback.svg")
+  -webkit-background-size: cover
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.tree_back
+  @media (max-width: $max-tablet)
+    background-image: url("../../images/tree.svg")
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+    background-repeat: no-repeat
+
+  /* http://jsfiddle.net/simurai/CGmCe/light/ */
+.tree_animation
+  position: absolute
+  margin: auto
+  top: 40%
+  left: 0
+  right: 0
+  z-index: 0
+  @media (min-width: $min-tablet)
+    width: 60px
+    height: 100px
+    background-image: url("../../images/tree-sprite2.png")
+    -webkit-animation: play 0.8s steps(7) infinite
+    animation: play 0.8s steps(7) infinite
+
+  @-webkit-keyframes play
+    from
+      background-position:    0px
+    to
+      background-position: -420px
+
+  @keyframes play
+    from
+      background-position:    0px
+    to
+      background-position: -420px

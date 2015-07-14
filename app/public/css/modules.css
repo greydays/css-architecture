@@ -14,7 +14,7 @@
   font-size: 1.25em;
 }
 .treeback_background {
-  background-image: url("../images/treeback.svg");
+  background-image: url("../../images/treeback.svg");
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;

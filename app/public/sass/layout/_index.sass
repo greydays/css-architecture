@@ -1,0 +1,59 @@
+%flex-box-centered
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  flex-direction: row
+  -webkit-flex-flow: row wrap
+  flex-wrap: wrap
+  -webkit-justify-content: center
+  justify-content: center
+  align-content: flex-start
+  align-items: flex-start
+
+.boundary
+  max-width: 60em
+  margin-right: auto
+  margin-left: auto
+  @media (max-width: $max-tablet)
+    margin-right: 0
+    margin-left: 0
+
+.container
+  position: relative
+  @extend %flex-box-centered
+
+.full_wide
+  width: 80%
+  margin-right: auto
+  margin-left: auto
+
+.half_wide
+  @media (min-width: $min-tablet)
+    float: left
+    width: 42%
+
+h2
+  margin-bottom: 1em
+
+section
+  margin-top: 1em
+
+section h1, h2
+  text-align: center
+
+article
+  line-height: 1.563em
+  padding: 1.25em
+
+article, form, h1, h2
+  @media (max-width: $max-tablet)
+    display: block
+    width: 80%
+    margin-right: auto
+    margin-left: auto
+
+.mission
+  clear: both
+
+
+
