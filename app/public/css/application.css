@@ -73,7 +73,7 @@ a {
   text-decoration: none;
   color: white; }
   a:hover {
-    font-style: italic; }
+    color: black; }
 
 strong {
   text-transform: uppercase;
@@ -235,11 +235,8 @@ article {
     margin-right: auto;
     margin-left: auto; } }
 
-.mission {
-  clear: both; }
-
 .home_header {
-  background-color: #11709D;
+  background-color: #0F4566;
   margin-bottom: 1em;
   color: white; }
   @media (max-width: 31.25em) {
@@ -275,7 +272,7 @@ article {
 
 @media (max-width: 31.25em) {
   .nav_link {
-    margin: 0 0.25em 0 0.25em;
+    margin: 0 0.25em;
     text-align: center; } }
 
 @media (min-width: 31.3125em) {
@@ -283,7 +280,6 @@ article {
     margin: 0 1em; } }
 
 .subscribe_form {
-  border-radius: 0.5em;
   text-align: center;
   max-width: 25em;
   min-width: 19em; }
@@ -293,7 +289,7 @@ article {
   margin: 1em auto 1em auto; }
 
 .subscribe_fieldset {
-  border-radius: 0.5em;
+  border-radius: 0.333em;
   padding: 0.375em;
   background-color: #979EAA; }
 
@@ -301,13 +297,12 @@ article {
   height: 2em;
   width: 99%;
   font-size: 1em;
-  border-radius: 0.375em;
+  border-radius: 0.333em;
   border: none;
   margin-bottom: 0.125em;
   padding-left: 0.25em; }
 
 .subscribe_label {
-  margin-left: 0.3125em;
   font-size: 0.7em;
   font-weight: bold;
   text-transform: uppercase; }
@@ -321,14 +316,14 @@ article {
   box-shadow: 0 5px 0 #007F25;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-
-.subscribe_button:active {
-  box-shadow: 0 2px 0 #007F25;
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px); }
+  .subscribe_button:active {
+    box-shadow: 0 2px 0 #007F25;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px); }
 
 .endorsement {
   color: white;
+  background-color: #0F4566;
   position: relative; }
   @media (max-width: 31.25em) {
     .endorsement {
@@ -342,8 +337,7 @@ article {
 
 .endorsement_quote {
   font-style: italic;
-  font-size: 1.25em;
-  /* http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */ }
+  font-size: 1.25em; }
   @media (min-width: 37.5625em) {
     .endorsement_quote {
       opacity: 0;
@@ -352,6 +346,7 @@ article {
       -webkit-transition: all 0.3s ease-in-out 0.2s;
       transition: all 0.3s ease-in-out 0.2s; } }
 
+/* http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */
 @media (min-width: 37.5625em) {
   .endorsement_quote_animated {
     opacity: 1;
@@ -360,22 +355,14 @@ article {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s; } }
 
-.treeback_background {
-  background-image: url("../../images/treeback.svg");
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+@media (max-width: 37.5em) {
+  .tree_back {
+    background-image: url("../../images/tree.svg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; } }
 
-.tree_back {
-  /* http://jsfiddle.net/simurai/CGmCe/light/ */ }
-  @media (max-width: 37.5em) {
-    .tree_back {
-      background-image: url("../../images/tree.svg");
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-      background-repeat: no-repeat; } }
-
+/* http://jsfiddle.net/simurai/CGmCe/light/ */
 .tree_animation {
   position: absolute;
   margin: auto;
@@ -461,25 +448,3 @@ article {
 /*utilities*/
 .float_left {
   float: left; }
-
-.float_right {
-  float: right; }
-
-/*clear fix*/
-.clearfix {
-  zoom: 1; }
-
-.clearfix:before, .clearfix:after {
-  content: \0020;
-  display: block;
-  height: 0;
-  overflow: hidden; }
-
-.clearfix:after {
-  clear: both; }
-
-.box-set {
-  background: #e8eae9;
-  float: left;
-  width: 100%;
-  overflow: auto; }
