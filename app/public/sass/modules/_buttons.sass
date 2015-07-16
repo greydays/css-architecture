@@ -1,0 +1,85 @@
+$button-color: #00b233 //green
+$button-shadow-color: #007f25 //dark green
+$button-text-color: white
+$six-pack-buttons-width: 7em
+
+.push-button
+  font-size: 1em
+  min-width: 3em
+  border: none
+  border-radius: 2em
+  padding: 0.5em
+  text-transform: uppercase
+  background-color: $button-color
+  color: $button-text-color
+  box-shadow: 0 4px 0 $button-shadow-color
+  -webkit-transition: all 0.1s linear
+  transition: all 0.1s linear
+  &:active
+    box-shadow: 0 1px 0 $button-shadow-color
+    -webkit-transform: translateY(3px)
+    transform: translateY(3px)
+// format: <button class="push-button"></button>
+
+.push-button-left
+  @extend .push-button
+  border-radius: 2em 0 0 2em
+  border-right: 1px solid $button-shadow-color
+
+.push-button-right
+  @extend .push-button
+  border-radius: 0 2em 2em 0
+  border-left: 1px solid $button-shadow-color
+
+.push-button-center
+  @extend .push-button
+  margin: 0 -0.25em
+  border-radius: 0
+// trio format:
+// <div>
+//   <button class="push-button-left">left</button>
+//   <button class="push-button-center">center</button>
+//   <button class="push-button-right">right</button>
+// </div>
+
+.six-pack-buttons button
+  width: $six-pack-buttons-width
+
+.top-row:active
+  overflow: hidden
+
+.bottom-row button
+  border-top: 1px solid $button-shadow-color
+
+.push-button-top-left
+  @extend .push-button
+  border-radius: 2em 0 0 0
+  border-right: 1px solid $button-shadow-color
+
+.push-button-top-right
+  @extend .push-button
+  border-radius: 0 2em 0 0
+  border-left: 1px solid $button-shadow-color
+
+.push-button-bottom-right
+  @extend .push-button
+  border-radius: 0 0 2em 0
+  border-left: 1px solid $button-shadow-color
+
+.push-button-bottom-left
+  @extend .push-button
+  border-radius: 0 0 0 2em
+  border-right: 1px solid $button-shadow-color
+// six pack format:
+// <div class="six-pack-buttons">
+//   <div class="top-row">
+//     <button class="push-button-top-left"></button>
+//     <button class="push-button-center"></button>
+//     <button class="push-button-top-right"></button>
+//   </div>
+//   <div class="bottom-row">
+//     <button class="push-button-bottom-left"></button>
+//     <button class="push-button-center"></button>
+//     <button class="push-button-bottom-right"></button>
+//   </div>
+// </div>
