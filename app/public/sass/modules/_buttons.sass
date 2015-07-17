@@ -1,0 +1,70 @@
+//green, set your own color
+$button-color: #00b233 !default
+
+//dark green, the shaddow should be a darker shade of the button color
+$button-shadow-color: #007f25 !default
+
+// white for good contrast to green
+$button-text-color: white !default
+
+// the six-pack format looks best with uniform width, though the middle buttons can be different than the outer buttons, as long as they are the same.
+$six-pack-buttons-width: 7em
+
+@mixin pushButton ($background-color: $button-color, $color: $button-text-color, $box-shadow: $button-shadow-color, $border-radius: 0.75em)
+  font-size: 1em
+  min-width: 3em
+  border: none
+  border-radius: $border-radius
+  padding: 0.5em
+  text-transform: uppercase
+  background-color: $background-color
+  color: $color
+  box-shadow: 0 4px 0 $box-shadow
+  -webkit-transition: all 0.1s linear
+  transition: all 0.1s linear
+  &:active
+    box-shadow: 0 1px 0 $box-shadow
+    -webkit-transform: translateY(3px)
+    transform: translateY(3px)
+
+.button
+  @include pushButton
+
+.push-button-left
+  @include pushButton($border-radius: 1em 0 0 1em)
+  border-right: 1px solid $button-shadow-color
+
+.push-button-right
+  @include pushButton($border-radius: 0 1em 1em 0)
+  border-left: 1px solid $button-shadow-color
+
+.push-button-center
+  @include pushButton($border-radius: 0)
+  margin: 0 -0.25em
+
+.six-pack-buttons button
+  width: $six-pack-buttons-width
+
+.top-row:active
+  overflow: hidden
+
+.bottom-row button
+  border-top: 1px solid $button-shadow-color
+
+//these button are completely rouned on their respective corner
+.push-button-top-left
+  @include pushButton($border-radius: 2em 0 0 0)
+  border-right: 1px solid $button-shadow-color
+
+.push-button-top-right
+  @include pushButton($border-radius: 0 2em 0 0)
+  border-left: 1px solid $button-shadow-color
+
+.push-button-bottom-right
+  @include pushButton($border-radius: 0 0 2em 0)
+  border-left: 1px solid $button-shadow-color
+
+.push-button-bottom-left
+  @include pushButton($border-radius: 0 0 0 2em)
+  border-right: 1px solid $button-shadow-color
+
