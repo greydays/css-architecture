@@ -1,46 +1,46 @@
-$button-color: #00b233 //green
-$button-shadow-color: #007f25 //dark green
-$button-text-color: white
+//green, set your own color
+$button-color: #00b233 !default
+
+//dark green, the shaddow should be a darker shade of the button color
+$button-shadow-color: #007f25 !default
+
+// white for good contrast to green
+$button-text-color: white !default
+
+// the six-pack format looks best with uniform width, though the middle buttons can be different than the outer buttons, as long as they are the same.
 $six-pack-buttons-width: 7em
 
-.push-button
+@mixin pushButton ($background-color: $button-color, $color: $button-text-color, $box-shadow: $button-shadow-color, $border-radius: 0.75em)
   font-size: 1em
   min-width: 3em
   border: none
-  border-radius: 2em
+  border-radius: $border-radius
   padding: 0.5em
   text-transform: uppercase
-  background-color: $button-color
-  color: $button-text-color
-  box-shadow: 0 4px 0 $button-shadow-color
+  background-color: $background-color
+  color: $color
+  box-shadow: 0 4px 0 $box-shadow
   -webkit-transition: all 0.1s linear
   transition: all 0.1s linear
   &:active
-    box-shadow: 0 1px 0 $button-shadow-color
+    box-shadow: 0 1px 0 $box-shadow
     -webkit-transform: translateY(3px)
     transform: translateY(3px)
-// format: <button class="push-button"></button>
+
+.button
+  @include pushButton
 
 .push-button-left
-  @extend .push-button
-  border-radius: 2em 0 0 2em
+  @include pushButton($border-radius: 1em 0 0 1em)
   border-right: 1px solid $button-shadow-color
 
 .push-button-right
-  @extend .push-button
-  border-radius: 0 2em 2em 0
+  @include pushButton($border-radius: 0 1em 1em 0)
   border-left: 1px solid $button-shadow-color
 
 .push-button-center
-  @extend .push-button
+  @include pushButton($border-radius: 0)
   margin: 0 -0.25em
-  border-radius: 0
-// trio format:
-// <div>
-//   <button class="push-button-left">left</button>
-//   <button class="push-button-center">center</button>
-//   <button class="push-button-right">right</button>
-// </div>
 
 .six-pack-buttons button
   width: $six-pack-buttons-width
@@ -51,35 +51,20 @@ $six-pack-buttons-width: 7em
 .bottom-row button
   border-top: 1px solid $button-shadow-color
 
+//these button are completely rouned on their respective corner
 .push-button-top-left
-  @extend .push-button
-  border-radius: 2em 0 0 0
+  @include pushButton($border-radius: 2em 0 0 0)
   border-right: 1px solid $button-shadow-color
 
 .push-button-top-right
-  @extend .push-button
-  border-radius: 0 2em 0 0
+  @include pushButton($border-radius: 0 2em 0 0)
   border-left: 1px solid $button-shadow-color
 
 .push-button-bottom-right
-  @extend .push-button
-  border-radius: 0 0 2em 0
+  @include pushButton($border-radius: 0 0 2em 0)
   border-left: 1px solid $button-shadow-color
 
 .push-button-bottom-left
-  @extend .push-button
-  border-radius: 0 0 0 2em
+  @include pushButton($border-radius: 0 0 0 2em)
   border-right: 1px solid $button-shadow-color
-// six pack format:
-// <div class="six-pack-buttons">
-//   <div class="top-row">
-//     <button class="push-button-top-left"></button>
-//     <button class="push-button-center"></button>
-//     <button class="push-button-top-right"></button>
-//   </div>
-//   <div class="bottom-row">
-//     <button class="push-button-bottom-left"></button>
-//     <button class="push-button-center"></button>
-//     <button class="push-button-bottom-right"></button>
-//   </div>
-// </div>
+
